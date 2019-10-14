@@ -9,6 +9,6 @@ sudo apt-get install python3
 sudo apt-get install python3-pip  
 
 -pip3 install virtualenv- 
-apt-get install python3-venv
-python3 -m venv myenv
+sudo apt-get install python3-venv
+sudo python3 -m venv myenv
 ```
