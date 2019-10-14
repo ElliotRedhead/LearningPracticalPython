@@ -13,18 +13,32 @@ assert count_upper_case("a") == 0, "One lower case."
 assert count_upper_case("£$%^") == 0, "Special characters."
 # print(count_upper_case("Hello world!"))
 
+def is_even(number):
+    """
+    A simple helper function that will check to see if a number is even or not
+    `number` is the number that we wish to check
+    Returns True or False depending on whether or not the number is evenly
+    divisble by 2
+    """
+    return number % 2 == 0
+    
 def even_number_of_evens(numbers):
-    if numbers == []:
-        return False
-    else:
-        evens = 0
-    for num in numbers:
-        if num % 2 == 0:
-            evens += 1
-    if evens == 0:
-        return False
-    else:
-        return evens % 2 == 0
+    """
+    Returns the number of even numbers contained in a list of numbers.
+    `numbers` should be a list containing numbers
+    
+    Returns either True or False based on a number of criteria.
+        - if `numbers` is empty, return `False`
+        - if the number of even numbers is odd, return `False`
+        - if the number of even numbers is 0, return `False`
+        - if the number of even numbers is even, return `True`
+    """
+        
+    # Iterate of over each item and if it's an even number, increment the
+    # `evens` variable
+    evens = sum([1 for n in numbers if is_even(n)])
+    return False if evens == 0 else is_even(evens)
+
 
 assert even_number_of_evens([]) == False, "No numbers"
 assert even_number_of_evens([2]) == False, "One even number"
