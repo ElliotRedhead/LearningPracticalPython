@@ -16,5 +16,6 @@ test_are_equal(get_change(20),[20])
 test_are_equal(get_change(50),[50])
 test_are_equal(get_change(100),[100])
 test_are_equal(get_change(3),[2,1])
+test_are_equal(get_change(7),[5,2])
 
 print("All tests pass!")
