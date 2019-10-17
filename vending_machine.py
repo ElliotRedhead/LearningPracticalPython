@@ -5,7 +5,12 @@ def get_change(amount):
         return[]
     if amount in [100, 50, 20, 10, 5, 2, 1]:
         return[amount]
-    return[2,1]
+    change = []
+    for coin in [100, 50, 20, 10, 5, 2, 1]:
+        if coin <= amount:
+            amount -= coin
+            change.append(coin)
+    return change
 
 test_are_equal(get_change(0),[])
 test_are_equal(get_change(1),[1])
