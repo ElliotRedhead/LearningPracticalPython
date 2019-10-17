@@ -2,10 +2,6 @@ from byotest import *
 
 coins = [100, 50, 20, 10, 5, 2, 1]
 def get_change(amount):
-    if amount == 0:
-        return[]
-    if amount in coins:
-        return[amount]
     change = []
     for coin in coins:
         while coin <= amount:
