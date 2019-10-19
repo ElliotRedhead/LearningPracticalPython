@@ -21,3 +21,5 @@ for i in old_list:
 
 is equal to:
 new_list = [expression(i) for i in old_list if filter(i)]
+
+Typing "python3" in the console allows for direct execution.
