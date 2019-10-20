@@ -14,6 +14,8 @@ sudo python3 -m venv myenv
 ```
 ## Key Points
 
+pipenv is now commonly used to manage packages and environments together.
+
 new_list = []
 for i in old_list:
     if filter(i):
