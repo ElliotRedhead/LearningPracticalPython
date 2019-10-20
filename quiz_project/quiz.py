@@ -22,7 +22,7 @@ def game_loop():
         if option == "1":
             print("You selected 'Ask questions.")
         elif option == "2":
-            print("You selected 'Add a question.'")
+            add_question()
         elif option == "3":
             break
         else:
