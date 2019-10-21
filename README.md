@@ -30,4 +30,9 @@ f.write("Example file text here")
 f.flush()  confirms the file content without having to close the file.
 f.close() confirms changes and closes the file.
 f.tell() indicates the position of the cursor.
-f.seek(0) returns the cursor to the start of the document.  
+f.seek(0) returns the cursor to the start of the document.
+
+To run unit-testing on the boggle solver project:
+```python3 -m unittest boggle_test```
+or
+```py -m unittest boggle_test```
