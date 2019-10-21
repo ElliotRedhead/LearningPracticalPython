@@ -56,7 +56,9 @@ class TestBoggle(unittest.TestCase):
         Ensure that ALL grid positions have neighbours.
         """
         grid = boggle.make_grid(2,2)
-        neighbours = boggle.test_all_grid_neighbours(grid)
-        selfAssertEqual(len(neighbours), len(grid))
+        neighbours = boggle.all_grid_neighbours(grid)
+        self.assertEqual(len(neighbours), len(grid))
         for pos in grid:
                 others = list(grid)
+                others.remove(pos)
+                self.assertListEqual(sorted(neighbours[pos]), sorted(others))
