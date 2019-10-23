@@ -39,3 +39,5 @@ or
 
 To test execution time (sorted):
 ```py -m cProfile -s cumtime boggle.py```
+
+Using a set rather than a list is better for execution time, python list data structure has O(n) lookup, whereas a set has an average O(1) lookup. The time taken to check if a set contains a particular item does not grow with the set size.
