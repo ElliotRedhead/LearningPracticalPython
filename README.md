@@ -36,3 +36,6 @@ To run unit-testing on the boggle solver project:
 ```python3 -m unittest boggle_test```
 or
 ```py -m unittest boggle_test```
+
+To test execution time:
+```py -m cProfile boggle.py```
