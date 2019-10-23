@@ -37,5 +37,5 @@ To run unit-testing on the boggle solver project:
 or
 ```py -m unittest boggle_test```
 
-To test execution time:
-```py -m cProfile boggle.py```
+To test execution time (sorted):
+```py -m cProfile -s cumtime boggle.py```
